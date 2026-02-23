@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#c0392b">
+  <title>pt</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon-192.png" type="image/png">
+</head>
+<body>
+  <div id="app">
+    <button id="btn-launch">Launch Timer</button>
+  </div>
+  <a id="repo-link" href="https://github.com/jcrigby/pt">github</a>
+  <script>
+    document.getElementById('btn-launch').addEventListener('click', function () {
+      var w = window.open('timer.html', 'pt', 'popup,width=300,height=420');
+      if (!w || w.closed) {
+        location.href = 'timer.html';
+      }
+    });
+  </script>
+</body>
+</html>
